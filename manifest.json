@@ -1,0 +1,9 @@
+{
+"name": "Samaritan",
+"short_name": "Samaritan",
+"start_url": "/",
+"display": "standalone",
+"background_color": "#000000",
+"theme_color": "#ff7a00",
+"icons": []
+}
