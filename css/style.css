@@ -530,6 +530,7 @@ input, textarea, select { font-family: var(--font-body); }
 .badge-public      { background: rgba(51,  153, 255, 0.12); color: #66aaff; border: 1px solid rgba(51,  153, 255, 0.3); }
 .badge-other       { background: rgba(153, 153, 153, 0.12); color: #aaaaaa; border: 1px solid rgba(153, 153, 153, 0.3); }
 .badge-emergency   { background: rgba(255, 51,  51,  0.2);  color: #ff4444; border: 1px solid rgba(255, 51,  51,  0.5); animation: blink 1.4s infinite; }
+.badge-news        { background: rgba(51, 153, 255, 0.18);  color: #66bbff; border: 1px solid rgba(51, 153, 255, 0.4); }
 
 .card-time {
   font-family: var(--font-mono);
@@ -599,6 +600,29 @@ input, textarea, select { font-family: var(--font-body); }
 }
 
 .share-btn:hover { border-color: var(--orange); color: var(--orange); }
+
+/* Read more link (news cards) */
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 12px;
+  border-radius: 7px;
+  border: 1px solid rgba(51, 153, 255, 0.4);
+  background: rgba(51, 153, 255, 0.08);
+  color: #66bbff;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+.read-more-btn:hover { background: rgba(51, 153, 255, 0.18); border-color: #66bbff; }
+
+/* News source label */
+.card-source {
+  color: var(--blue);
+  font-size: 11px;
+}
 
 /* Load more */
 .load-more-btn {
@@ -848,6 +872,7 @@ input[type="file"] { display: none; }
   gap: 6px;
 }
 
+.sos-type-card.selected,
 .sos-type-card:hover {
   border-color: var(--red);
   background: rgba(255, 51, 51, 0.06);
